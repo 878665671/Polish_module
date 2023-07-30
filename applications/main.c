@@ -523,7 +523,7 @@ static void Adaptive_downward_ON_OFF(rt_uint8_t isEnable)
         }
     }
     else if (isEnable == 0) {
-        if((Adaptive_tid->stat) != RT_THREAD_INIT) /* 如果线程处于初始化状态或者被删除过不执行 */
+        if((Adaptive_tid->stat) != RT_THREAD_INIT) /* 如果线程处于初始化状态或者被删除过不执行  */
         {
                                                 /*线程在没有初始化时他的状态是RT_THREAD_INIT，如过初始化后被delet删除处于RT_THREAD_CLOSE */
             if((Adaptive_tid->stat) != RT_THREAD_CLOSE)
